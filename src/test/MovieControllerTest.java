@@ -93,11 +93,11 @@ public class MovieControllerTest {
     @DisplayName("Prueba con títulos duplicados (estabilidad)")
     public void testEstabilidadConTitulosDuplicados() {
         Movie[] original = new Movie[] {
-            new Movie("Avatar", 2009),
-            new Movie("Avatar", 2016),
-            new Movie("Avatar", 2022),
-            new Movie("Batman", 2005),
-            new Movie("Batman", 2012) };
+                new Movie("Avatar", 2009),
+                new Movie("Avatar", 2016),
+                new Movie("Avatar", 2022),
+                new Movie("Batman", 2005),
+                new Movie("Batman", 2012) };
         Movie[] paraOrdenar = ValidatorsM.copiarArreglo(List.of(original));
 
         controller.sortByTitle(paraOrdenar);
